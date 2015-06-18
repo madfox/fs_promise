@@ -1,0 +1,16 @@
+{
+  "name": "fs_promise",
+  "version": "0.0.1",
+  "description": "promisify node fs package",
+  "main": "index.js",
+  "engines": {
+    "node": "~0.12.x",
+    "iojs": "*"
+  },
+  "keywords": [
+    "fs",
+    "promise"
+  ],
+  "author": "ajc",
+  "license": "ISC"
+}
