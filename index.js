@@ -13,9 +13,14 @@ Object.keys(fs.__proto__).forEach(function(name){
 				var args = slice.call(arguments);
 				return new Promise(function(res, rej){
 					args.push(function(err){
-						if(err){ rej(err) }
+						if(err === null){
+							res.apply(this, slice.call(arguments, 1));
+						}
+						else if(err instanceof Error){
+							rej(err);
+						}
 						else{
-							res.apply(this, slice.call(arguments).slice(1));
+							res.apply(this, slice.call(arguments));
 						}
 					});
 					tar.apply(fs, args);
