@@ -22,7 +22,7 @@ Object.keys(ofs).forEach(function(name){
 								res.apply(this, slice.call(arguments));
 							}
 						});
-						tar.apply(fs, args);
+						tar.apply(ofs, args);
 					});
 				}
 			};
