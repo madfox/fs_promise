@@ -1,6 +1,6 @@
 {
   "name": "fs_promise",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "promisify node fs package",
   "main": "index.js",
   "repository": {
@@ -8,8 +8,7 @@
     "url": "git@github.com:madfox/fs_promise.git"
   },
   "engines": {
-    "node": "~0.12.x",
-    "iojs": "*"
+    "node": "*"
   },
   "keywords": [
     "fs",
